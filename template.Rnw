@@ -44,10 +44,10 @@
 Confidence intervals are one of the most important statistical tools when trying to present data. They provide a range of values for which a certain percentage (typically around 95) of confidence intervals contain the true proportion or mean. There are several ways to create said intervals and some will be discussed below. 
 \end{abstract}
 
-\noindent \textbf{Keywords:} Confidence Intervals; Resampling; Point Estimates
+\noindent \textbf{Keywords:} Confidence Intervals; Resampling; Point Estimates; Simulation
 
 \section{Introduction}
-In this lab we will be discussing different ways of calculating margin of error and therefore creating a confidence interval. Margin of error is the distance form our point estimate (mean of the survey data) to the bounds of each end of the confidence interval. For the first two methods, a Basic Simulation and Resampling, we will be calculating the margin of error given an example of a poll. This poll surveyed 1004 American's on the current state of the nation. They either said they were satisfied, dissatisfied, or that they did not have an opinion. In this survey it was found that 39 percent of participants were satisfied with the country however this number is much more useful when associated with a confidence interval to know how precise the estimate is. The other 2 methods, a more complicated simulation and the formula for margin of error, were done more generally for many different n and p values. 
+In this lab we will be discussing different ways of calculating margin of error and therefore creating a confidence interval. Margin of error is the distance from a point estimate (mean of the survey data) to the bounds of each end of the confidence interval. For the first two methods, a Basic Simulation and Resampling, we will be calculating the margin of error given an example of a poll. This poll surveyed 1004 American's on the current state of the nation. They either said they were satisfied, dissatisfied, or that they did not have an opinion. In this survey it was found that 39 percent of participants were satisfied with the country however this number is much more useful when associated with a confidence interval to know how precise the estimate is. The other 2 methods, a more complicated simulation and the formula for margin of error, were done more generally for many different sample sizes and sample proportions values. 
 
 
 
@@ -95,7 +95,7 @@ In this simulation we simulated values with sample sizes going from 100 to 3000 
 \end{figure}
 
 \section{Actual Margin of Error Calculation}
-The final way we calculated margin of error was through a formula. This formula depends on our values for sample size, sample proportion, and the width of the confidence interval. Again for this method we calculated every margin of error for the same sample size and proportion values as the simulation. Through this we found that the margin of error for sample size 1000 and proportion 0.39 (like in the survey) was 0.03015. This value is again very similar to the resampling method and the simulation method. Again for this we plotted each point with each sample size and proportion in a heat map. Figure \ref{Figure 5} yields similar conclusions as \ref{Figure 4}; it proves that margin of error generally is highest when sample size is low nad the sample proportion is around 0.5 and as we escape from these points in the yellow region margin of error decreases. 
+The final way we calculated margin of error was through a formula. This formula depends on our values for sample size, sample proportion, and the width of the confidence interval. Again for this method we calculated every margin of error for the same sample size and proportion values as the simulation. Through this we found that the margin of error for sample size 1000 and proportion 0.39 (like in the survey) was 0.03015. This value is again very similar to the resampling method and the simulation method. Again for this we plotted each point with each sample size and proportion in a heat map. Figure \ref{Figure 5} yields similar conclusions as Figure \ref{Figure 4}; it proves that margin of error generally is highest when sample size is low and the sample proportion is around 0.5 and as we escape from these points in the yellow region margin of error decreases. 
 
 \begin{figure}[H]
 \begin{center}
@@ -106,7 +106,7 @@ The final way we calculated margin of error was through a formula. This formula 
 \end{figure}
 
 \section{Conclusion}
-As we can see with Resampling, Simulating over Sample Size and Sample Proportion, and using the Formula for Margin of Error given Sample Size and Sample proportions we obtain values that are very close to each other given a specific example. 
+As we can see with a basic simulation, resampling, simulating over sample size and sample proportion, and using the formula for margin of error given sample size and sample proportions we obtain values that are very close to each other given a specific example. 
 
 
 
